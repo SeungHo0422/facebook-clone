@@ -70,7 +70,7 @@ app.use(express.static("public"));
 
 /* MongoDB Connection */
 mongoose
-    .connect(process.env.MONGODB_URI, {
+    .connect("mongodb://127.0.0.1:27017/facebook_clone", {
         useNewUrlParser: true, //false <= deprecated
         // useCreateIndex: true, //false <= deprecated
         useUnifiedTopology: true, // Enables the new unified topology layer
